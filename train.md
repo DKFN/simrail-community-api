@@ -2,6 +2,7 @@
 
 This API retrieves the train schedules for a driver given a train number
 
+Source: Secret -for now-
 ```
 https://staging.simrail.deadlykungfu.ninja/train/40684
 ```
@@ -39,12 +40,13 @@ Will return an array of TrainTimetableRow
 
 ## TimeTableRow
 
-| Field                  | Type            | Description                                                              |
-|------------------------|-----------------|--------------------------------------------------------------------------|
-| train_number           | `string`        | The number of the train                                                  |
-| scheduled_arrival_hour | `string / null` | The time the train should arrive at the station                          |
-| station                | `string`        | The station name                                                         |
-| layover                | `string / null` | Time in minutes of the layover if the train stops at this station        |
-| line                   | `string`        | The line the train will be running at this station                       |
-| cachedate              | `string`        | Time this data was updated for the last time                             |
-| stop_type              | `string / null` | If there is a stop at the station, the type of the layover. `ph` or `pt` |
+| Field                  | Type            | Description                                                               |
+|------------------------|-----------------|---------------------------------------------------------------------------|
+| train_number           | `string`        | The number of the train                                                   |
+| scheduled_arrival_hour | `string / null` | The time the train should arrive at the station                           |
+| station                | `string`        | The station name                                                          |
+| layover                | `string / null` | Time in minutes of the layover if the train stops at this station         |
+| line                   | `string`        | The line the train will be running at this station                        |
+| cachedate              | `string`        | Time this data was updated for the last time                              |
+| stop_type              | `string / null` | If there is a stop at the station, the type of the layover. `ph` or `pt`  |
+| hourSort               | `number`        | Hour in HHmm format to help sorting the data or focus the current station |
