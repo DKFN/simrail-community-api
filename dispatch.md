@@ -55,6 +55,7 @@ The response will be an Array of StationTimetableRow
 ```
 
 ### StationTimetableRow
+
 | Field            | Type                 | Description                                                |
 |------------------|----------------------|------------------------------------------------------------|
 | train_number     | `string`             | The number of the train                                    |
