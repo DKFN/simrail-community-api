@@ -15,6 +15,8 @@ https://staging.simrail.deadlykungfu.ninja/dispatch/BZ
 ## Response
 The response will be an Array of StationTimetableRow
 
+/!\ The official EDR timetable has a bug where some departure times for trains differ of 1minute between dispatch and train data. This is not an API bug /!\
+
 ```json
 [
   {
