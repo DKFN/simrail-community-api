@@ -55,6 +55,7 @@ The response will be an Array of StationTimetableRow
 ```
 
 ### StationTimetableRow
+Content of each elements of the array:
 
 | Field            | Type                 | Description                                                |
 |------------------|----------------------|------------------------------------------------------------|
